@@ -1,4 +1,9 @@
 default:
-	bash build-wheels.sh
-install-pip:
-	python -c 'import pip; print pip' || python get-pip.py ${FALCON_PIP_USER}
+build:
+	bash pitchfork-build.sh
+checkout:
+	bash pitchfork-checkout.sh
+copy:
+tar:
+test:
+	bash test.sh
