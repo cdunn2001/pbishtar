@@ -11,6 +11,13 @@ ${PBISHTAR_DIR}/fix_shebang.py
 cd ../lib
 rm -f *.a
 rm -rf libboost*
+cd ..
+find . -name '*.png' | xargs rm -f
+find . -name '*.jpg' | xargs rm -f
+find . -name '*.svg' | xargs rm -f
+find . -name '*.gif' | xargs rm -f
+find . -name '*.pdf' | xargs rm -f
+rm -rf lib/python2.7/site-packages/matplotlib/tests/
 popd
-tar -cf /scratch/cdunn/foo.tar -C ${READY_DIR} .
-gzip /scratch/cdunn/foo.tar
+tar -cfz /scratch/cdunn/foo.tar.gz -C ${READY_DIR} .
+#gzip /scratch/cdunn/foo.tar

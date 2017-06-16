@@ -1,4 +1,5 @@
 #python -c 'import pip; print pip' || python get-pip.py --user
+set -vex
 
 VENV=$(pwd)/.git/VENV
 rm -rf ${VENV}
@@ -8,3 +9,4 @@ export LD_LIBRARY_PATH=${VENV}/lib:$LD_LIBRARY_PATH
 tar xvfz /scratch/cdunn/foo.tar.gz -C ${VENV}/
 which fc_ovlp_stats.py
 fc_ovlp_stats.py -h
+ldd -r ${VENV}/lib/libblasr.so
