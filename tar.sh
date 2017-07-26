@@ -20,6 +20,7 @@ find . -name '*.gif' | xargs rm -f
 find . -name '*.pdf' | xargs rm -f
 rm -rf lib/python2.7/site-packages/matplotlib/tests/
 rm -rf lib/python2.7/site-packages/mpl_toolkits/tests/
+find lib/python2.7/site-packages/falcon_unzip -name '*.py'|xargs rm -f
 popd
 mkdir -p /scratch/cdunn/
 tar -czf /scratch/cdunn/foo.tar.gz -C ${READY_DIR} .

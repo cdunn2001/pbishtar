@@ -13,6 +13,6 @@ module load git
 set -vex
 
 PFHOME=/scratch/cdunn/fork
-PREFIX=/scratch/cdunn/fork/.git/LOCAL2
+PREFIX=/scratch/cdunn/fork/.git/LOCAL4
 PYTHONUSERBASE=${PREFIX}
 export PFHOME PREFIX PYTHONUSERBASE
