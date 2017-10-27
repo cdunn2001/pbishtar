@@ -2,7 +2,7 @@ source /mnt/software/Modules/current/init/bash
 module purge
 module load git
 
-#module load python/2.7.13-UCS2
+module load python/2.7.13-UCS2
 #module load gcc/4.9.2
 #module load ccache
 #module load cmake
@@ -13,6 +13,6 @@ module load git
 set -vex
 
 PFHOME=/scratch/cdunn/fork
-PREFIX=/scratch/cdunn/fork/.git/LOCAL4
+PREFIX=/scratch/cdunn/fork/.git/LOCAL2
 PYTHONUSERBASE=${PREFIX}
 export PFHOME PREFIX PYTHONUSERBASE
