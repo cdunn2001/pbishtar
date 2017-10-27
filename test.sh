@@ -13,6 +13,9 @@ tar xvfz /scratch/cdunn/foo.tar.gz -C ${VENV}/
 
 which fc_ovlp_stats
 fc_ovlp_stats -h
+which fc_unzip.py
+which fc_phasing.py
+fc_phasing.py -h
 #which ldd # does not work from /mnt/software/g/gcc/4.9.2/libc-2.5/bin/ldd
 #ldd --help
 /usr/bin/ldd -r ${VENV}/bin/blasr
