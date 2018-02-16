@@ -9,7 +9,7 @@ source /mnt/software/Modules/current/init/bash
 virtualenv --python=$(which python) ${VENV}
 source ${VENV}/bin/activate
 export LD_LIBRARY_PATH=${VENV}/lib:$LD_LIBRARY_PATH
-tar xvfz /scratch/cdunn/foo.tar.gz -C ${VENV}/
+tar xvfz /scratch/cdunn/foo${UCS}.tar.gz -C ${VENV}/
 
 which fc_ovlp_stats
 fc_ovlp_stats -h

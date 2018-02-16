@@ -23,5 +23,5 @@ rm -rf lib/python2.7/site-packages/mpl_toolkits/tests/
 find lib/python2.7/site-packages/falcon_unzip -name '*.py'|xargs rm -f
 popd
 mkdir -p /scratch/cdunn/
-tar -czf /scratch/cdunn/foo.tar.gz -C ${READY_DIR} .
+tar -czf /scratch/cdunn/foo${UCS}.tar.gz -C ${READY_DIR} .
 #gzip /scratch/cdunn/foo.tar
