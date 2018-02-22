@@ -13,6 +13,6 @@ module load python/2.7.13-UCS${UCS}
 #set -vex
 
 PFHOME=/scratch/cdunn/fork
-PREFIX=/scratch/cdunn/fork/.git/LOCAL${UCS}
+PREFIX=${PREFIX:-/scratch/cdunn/fork/.git/LOCAL${UCS}}
 PYTHONUSERBASE=${PREFIX}
 export PFHOME PREFIX PYTHONUSERBASE
