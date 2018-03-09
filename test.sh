@@ -1,3 +1,7 @@
+source /mnt/software/Modules/current/init/bash
+module load virtualenv
+module load gcc/6.4.0
+
 #python -c 'import pip; print pip' || python get-pip.py --user
 set -vex
 
