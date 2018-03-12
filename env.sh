@@ -1,7 +1,7 @@
 source /mnt/software/Modules/current/init/bash
 module purge
 module load git
-module load python/2.7.13-UCS${UCS}
+module load python/2.7.14-UCS${UCS}
 
 #set -vex
 
