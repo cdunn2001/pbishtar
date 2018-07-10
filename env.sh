@@ -6,7 +6,7 @@ module load python/2.7.14-UCS${UCS}
 #set -vex
 
 # You should set PFHOME and UCS yourself.
-PFHOME=${PFHOME:-/scratch/cdunn/fork}
+PFHOME=${PFHOME:-/scratch/cdunn/repo/fork}
 PREFIX=${PFHOME}/.git/LOCAL${UCS}
 PYTHONUSERBASE=${PREFIX}
 export PFHOME PREFIX PYTHONUSERBASE
