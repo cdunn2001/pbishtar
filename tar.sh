@@ -25,3 +25,4 @@ popd
 mkdir -p /scratch/cdunn/
 tar -czf /scratch/cdunn/foo${UCS}.tar.gz -C ${READY_DIR} .
 #gzip /scratch/cdunn/foo.tar
+ls -larth /scratch/cdunn/foo${UCS}.tar.gz
